@@ -21,24 +21,27 @@ p {
     align-items: center;
     justify-content: center;
     margin-top: 1.5rem;
-    gap: 40px;
+    gap: 25px;
 }
 
 .h1 {
     text-align: center;
     font-family: Poppins;
     font-weight: 200;
+    font-size: xx-large;
 }
 
 .h1 span {
     text-align: center;
     font-weight: 600;
+    font-size: xx-large;
 }
 
 .sub-text {
     margin-top: 1em;
-    padding: 0px 28rem;
+    padding: 0px 26rem;
     text-align: center;
+    font-size: small;
 }
 
 .main-section {
@@ -47,7 +50,7 @@ p {
     align-items: center;
     padding: 30px;
     margin-top: 0;
-    gap: 30px;
+    gap: 20px;
     height: fit-content;
     box-shadow: 0px 5px 3px #A3A5AE;
 }
@@ -59,14 +62,15 @@ p {
 }
 
 .feature h2 {
-    font-size: 1.5em;
+    font-size: 1em;
+    padding-bottom: 5px
 }
 
 .tbk {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 .team, .karma, .supervisor, .calculator {
@@ -74,21 +78,23 @@ p {
     height: fit-content;
     border-top-width: 7px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 7px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-color: #FAFAFA;
     flex-direction: column;
-    width: 320px;
+    width: 310px;
     padding: 2rem;
-    box-shadow: 0px 5px 3px #A3A5AE;
+    box-shadow: 0px 0px 1px #A3A5AE;
+    border-top-width: 3.5px;
 }
 
 #team, #supervisor, #karma, #calculator {
     display: flex;
     justify-content: flex-end;
-    height: fit-content;
+    height: 70px;
     padding-top: 1rem;
+    margin-top: 10px;
 }
 
 .team {
@@ -105,4 +111,33 @@ p {
 
 .calculator {
     border-top-color: hsl(212, 86%, 64%);
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) 
+{
+    .main-section {
+       flex-direction: column;
+    }
+    .sub-text {
+    padding: 0px 10px;
+    }
+    * {
+        overflow: scroll;
+        margin-top: 10px;
+    }
+    .h1 {
+        padding: 0.655px;
+        font-size: 20px;
+    }
+    .h1 span{
+        padding: 0.655px;
+        font-size: 20px;
+    }
+    .flex-container {
+        margin: 2px;
+    }
+    .main-section {
+        gap: 0px;
+    }
 }
